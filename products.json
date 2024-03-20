@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "image": "Untitled-1.png",
+        "productName": "PN Baseball T-shirt",
+        "price": 1500000,
+        "productType":"featured",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": 2,
+        "image": "Poka Cream Tee.png",
+        "productName": "Cream Poka T-shirt",
+        "price": 2500000,
+        "productType":"featured",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": 6,
+        "image": "DESIGN 01 BLACK FRONT.png",
+        "productName": "PN Bloddy Tee",
+        "price": 2500000,
+        "productType":"main.featured",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": 3,
+        "image": "PN black hoodie (2).jpg",
+        "productName": "PN Black hoodie",
+        "price": 200000,
+        "productType":"featured",
+        "category":"hoodies",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": 5,
+        "image": "PN black hoodie shorts.png",
+        "productName": "PN Black Shorts",
+        "price": 1100000,
+        "productType":"featured",
+        "category":"shorts",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": 4,
+        "image": "Blue tee Front 2.png",
+        "productName": "Blue Poka T-shirt",
+        "price": 2500000,
+        "productType":"main,featured",
+        "category":"tshirt",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+
+    {
+        "id": 7,
+        "image": "DESIGN 03 CREAM FRONT.png",
+        "productName": "Product Name",
+        "price": 1500000,
+        "productType":"main",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": 8,
+        "image": "DESIGN 02 WHITE FRONT.png",
+        "productName": "PN Believe T-shirt",
+        "price": 1000000,
+        "productType":"main",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.lo"
+    },
+    {
+        "id":10,
+        "image": "Design 04.png",
+        "productName": "PN Pylota T-shirt",
+        "price": 1600000,
+        "productType":"main",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id":11,
+        "image": "Poka T-shirt.png",
+        "productName": "Poka T-shirt",
+        "price": 1700000,
+        "productType":"main",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id":12,
+        "image": "PN red shorts.jpg",
+        "productName": "PN Red Shorts",
+        "price": 5000000,
+        "productType":"main",
+        "category":"shorts",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id":13,
+        "image": "Poka Black Tee.png",
+        "productName": "Black Poka T-shirt",
+        "price": 1050000,
+        "productType":"featured",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id":14,
+        "image": "pink baseball tee.jpg",
+        "productName": "Pink Baseball Tee",
+        "price": 950000,
+        "productType":"featured,  main",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+
+]
+

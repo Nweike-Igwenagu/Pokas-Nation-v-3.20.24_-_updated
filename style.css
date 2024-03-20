@@ -1,0 +1,732 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button{
+    cursor: pointer;
+    
+}
+button:active{
+    opacity: 0.3;
+    transition: 0.3s ease-out;
+}
+
+.logoImage{
+    width: 176px;
+    height: 31px;
+    margin-top: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    padding-top: 20px;
+    position: fixed;
+    transition: 0.2s ease-in-out;
+    top: 0;
+    z-index: 1;
+}
+
+nav.scrolled{
+    padding: 10px 0px;
+    background-color: #fff;
+    box-shadow: 0px 3px 20px rgba(193, 193, 193, 0.64);
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.no{
+    display: none;
+}
+
+.navLinks a{
+    font-size: 20px;
+    font-family: "Jost",sans-serif;
+    margin-top: 8px;
+}
+
+.active{
+    color: rgb(0, 38, 255);
+}
+
+.navLinks a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: .2s;
+    border-radius: 50px;
+    margin-top: 2px;   
+}
+
+.navLinks a:hover::after{
+    width: 100%;
+}
+
+.ol2{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.ol2 span{
+    margin-top: 1px;
+}
+
+.sliderImage{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background:url(/images/sliderImage.png);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    animation: slider 5s steps 3s infinite;
+    transition: 1s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: none;
+}
+
+
+.featuredProductsText{
+    font-family: "Jost",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.featuredProductsContainer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    padding: 20px 0px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    height: 370px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}.featuredProductsContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.featuredProductsIndividualContainer{
+    height: 355px;
+    width: 260px;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+.featuredProductsIndividualContainer img{
+    height: 250px;
+    width: 250px;
+}
+
+.featuredProductsIndividualContainer p{
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    padding: 5px 0px;
+}
+
+
+.shopNowButton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
+    border: none;
+    padding: 8px 13px;
+    outline: none;
+    border-radius: 50px;
+}
+
+.fpScrolllButton{
+    margin-left: 5rem;
+    margin-top: -35rem; 
+    border: 0; 
+    padding: 1rem; 
+    border-radius: 50%; 
+    color: rgb(0, 0, 0); 
+    background-color: rgb(255, 255, 255);
+    box-shadow: .5px .5px 1px 3px rgba(153, 153, 153, 0.741);
+
+}
+
+.fpScrollButton{
+    margin-top: -35rem; 
+    border: 0; 
+    padding: 1rem; 
+    border-radius: 50%; 
+    color: rgb(0, 0, 0); 
+    background-color: rgb(255, 255, 255);
+    margin-left: 67rem;
+    box-shadow: .5px .5px 1px 3px rgba(153, 153, 153, 0.741);
+}
+
+#menuIcon{
+    display: none;
+}
+
+.allProductsContainer{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+}
+
+.allProductsContainer img{
+    height: 230px;
+    width: 230px;
+}
+
+.mainProductsIndividualContainer{
+    height: 355px;
+    width: 260px;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    transition: 0.1s ease-out;
+    margin-bottom: 30px;
+    padding: 5px 0px;
+    overflow: hidden;
+}
+
+.mainProductsIndividualContainer:hover{
+    .addToCartButton{
+        background-color: black;
+        color: white;
+    }
+    box-shadow: 2px 3px 10px grey;
+    scale: 1.02;
+}
+
+.mainProductsIndividualContainer p{
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    padding: 3px 0px;
+}
+
+.addToCartButton{
+    height: 40px;
+    width: 125px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    margin-top: 5px;
+    transition: 0.2s ease-out;
+}
+
+/* Back to top button */
+.bttbContainer{
+    position: relative;
+}
+
+.backToTopButton{
+    background-color: #ffffffd6;
+    border-radius: 31px;
+    color: #000000d6;
+    align-items: center;
+    font-size:  24px;
+    padding: 12px 15px;
+    right: 15px;
+    top: 90vh;
+    position: fixed;
+    opacity: 0.3;
+    transition: .3s;
+    font-weight: 100;
+    box-shadow: .5px .5px 1px 3px rgba(153, 153, 153, 0.741);
+}
+
+.backToTopButton a{
+    margin: auto auto
+}
+
+.backToTopButton:hover{
+    opacity: 1;
+}
+
+/* Footer */
+footer{
+    background-color: rgba(255, 255, 255, 0.927);
+    width: 100%;
+    height: 200px;
+    color: rgba(0, 0, 0, 0.834);
+    border-top: 1px solid grey;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.footerContainer{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotterContentContainer{
+    width: 50%;
+    height: 190px;
+    padding: 15px 15px;
+}
+
+.fotterContentContainer img{
+    scale: 1.3;
+    margin-bottom: 30px;  
+    margin-left: 15px; 
+    opacity: .8 ;                                                                                
+}
+
+
+.fotterContentContainer h2{
+    font-family: "Jost", sans-serif;
+    text-align: right;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.834);
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.fotterContentContainer p{
+    font-family: "Jost", sans-serif;
+    text-align: right;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.newsletterEmail{
+    font-family: "Jost", sans-serif;
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 40px;
+    border-bottom: 2px solid rgb(233, 9, 9);
+    margin-bottom: 5px;
+    padding: 0px 8px;
+    transition: 0.3s ease-out;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.newsletterEmail::placeholder{
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.newsletterEmail:focus{
+    box-shadow: .5px .5px 1px 3px rgba(128, 128, 128, 0.407);
+    scale: 1.01;
+}
+
+.suscribeButton{
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.suscribeButton:hover{
+    color: #fff;
+    background-color: black;
+    border: none;
+    transition: .3s  ease-out;
+}
+
+.socialIcons{
+    font-size: 25px;
+    padding: 15px 0px;
+    text-align: right ;
+    column-gap: 20px;
+}
+.socialIcons #icons{
+    margin-left: 10px;
+}
+
+.newsletterAlert{
+    align-self: left;
+    color: green;
+    font-size: 12px;
+    font-family: "Poppins";
+    display: none;
+}
+/* Login Page */
+
+.loginDetailsContainer{
+    width: 400px;
+    border: 1px solid rgb(32, 32, 32);
+    text-align: center;
+    display: grid;
+    align-items: center ;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    margin: 120px auto;
+}
+
+.loginDetailsContainer h2{
+    font-family: "Marcellus SC";
+    font-size: 34px;
+    font-weight: normal;
+    padding: 20px 0px;
+    
+}
+
+.loginDetailsInput{
+    width: 357px;
+    height: 54px;
+    margin: 15px 0px;
+    padding: 0px 8px;
+    font-size: 16px;
+}
+
+.loginDetailsContainer button{
+    width: 378px;
+    height: 54px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    transition: .2s ease-out;
+}
+
+.loginDetailsContainer button:active{
+    opacity: 0.3;
+}
+
+#loginDetailsInputCheckbox{
+    
+    margin-left: 0px;
+    margin-bottom: 15px;
+    margin-left: -360px;
+}
+
+
+.checkboxLabel{
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-left: 38px;
+    text-align: start;
+    margin-top: -37.5px;
+}
+
+.loginDetailsRegister{
+    font-family: "Roboto";
+    font-size: 15px;
+    margin: 20px;
+}
+
+.loginDetailsRegister a{
+    text-decoration: underline;
+}
+
+
+/* DashBoard Page */
+.dasboardContainer{
+    display: flex;
+    margin: auto;
+    align-self: center;
+    box-shadow: 2px 2px 7px gray;
+    margin-top: 110px;
+    width: 900px;
+    margin-bottom: 100px;
+    padding: 10px 0px;
+}
+
+.navSection{
+    height: 90vh;   
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-right: 0.5px solid rgb(210, 209, 209);
+    row-gap: 10px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.imageDiv{
+    margin: auto;
+}
+.navSection img{
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+}
+
+.navSection h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navItemContainer{
+    height: 20px;
+    background-color: rgb(245, 244, 244);
+    border-bottom: 1px solid rgb(91, 90, 90);
+    padding: 15px 5px;
+    margin-left: 10px;
+}
+
+.navItemContainer:hover{
+    box-shadow: 0.5px 0.5px 7px grey;
+    border: none;
+    transition: .3s ease-out;
+}
+
+.navItemContainer:focus{
+    border: 1px solid rgb(127, 127, 127);
+    /* transition: .3s ease-out; */
+    
+}
+
+.displaySection{
+    height: 90vh;
+    width: 600px;
+}
+
+.displaySection h2{
+    font-family: "Marcellus SC";
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+    padding: 10px;
+    color: rgb(66, 66, 66);
+}
+
+
+/* shopping cart Page */
+.shoppingCart{
+    height: 100vh;
+    width: 400px;
+    background-color: black;
+    opacity: 0.123;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+
+/* shop Page */
+.shopPageBanner{
+    width: 100%;
+    height: 300px;
+    background: url(/images/small\ slider\ image.jpg);
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.shopPageHeader{
+    font-family: "Jost", sans-serif;
+    font-size: 50px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.shopProductsContainer{
+    /* width: 100%; */
+    margin: 80px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    /* margin: auto; */
+    gap: 50px 50px;
+    justify-content: center;
+    
+}
+
+.shopProductsIndividualContainer{
+    width: 500px;
+    display: flex;
+    column-gap: 30px;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.shopProductsIndividualContainer:hover{
+    .shopImage{
+        transform: scale(1.08);
+        transition: .2s ease-in-out;
+    }
+}
+
+.shopProductsIndividualContainer img{
+    height: 200px;
+    width: 200px;
+}
+
+.shopProductsIndividualContainer p{
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.spDescription{
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(21, 21, 21);
+    text-align: right;
+}
+
+.spPrice{
+    color: rgba(0, 0, 0, 0.781);
+}
+
+.spProductDetailsCont{
+    margin-top: 20px;
+    height: 100px;
+    
+}
+
+/* search bar */
+.searchBar{
+    width: 570px;
+    background-color: antiquewhite;
+}
+
+.searchInput{
+    width: 303.5px;
+    height: 35px;
+    background-color: #faf8f8;
+    font-family: "Jost";
+    font-weight: 300;
+    font-size: 16px;
+    border-radius: 32px;
+    padding: 5px 20px;
+    display: none;
+    transition: .3s ease-out;
+    position: relative;
+}
+.searchField{
+    width: 273.5px;
+    height: 35px;
+    background-color: transparent;
+    font-family: "Jost";
+    font-weight: 300;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    transition: .3s ease-out;
+}
+
+#closeIcon{
+    cursor: pointer;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px; 
+}
+
+/* New Collection Page */
+.categoryNav{
+    width: 100%;
+    height: 30px;
+    padding: 30px 0px;
+}
+
+.categoryNavItemContainer{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    height: 25px;
+    min-width: 40PX;
+    text-align: center;
+    font-family: "Jost";
+    font-size: 16px;
+    padding: 3px 10px;
+    font-weight: 500;
+    border-radius: 40px;
+    border: 1.5px solid rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+
+.collectionProducts{
+    width: 1000px;
+    margin: auto;
+    padding: 30px 0px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-content: center;
+    gap: 20px 80px;
+    min-height: 300px;
+}
+
+.collectionProductsContainer{
+    width: 270px;
+    height: 450px;
+}
+
+.collectionProductsContainer img{
+    height: 270px;
+    width: 270px;
+}
+
+.collectionProductsDes{
+    font-family: "Jost";
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.blur{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(67, 67, 67);
+    /* text-align: left; */
+    font-family: "Jost";
+}
+
+
+.selected{
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    transition: .2s;
+}
+
+
+
+
+
+
