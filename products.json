@@ -56,7 +56,7 @@
 
     {
         "id": 7,
-        "image": "DESIGN 03 CREAM FRONT.png",
+        "image": "DESIGN 03 CREAM FRONT.jpg",
         "productName": "Product Name",
         "price": 1500000,
         "productType":"main",
@@ -65,7 +65,7 @@
     },
     {
         "id": 8,
-        "image": "DESIGN 02 WHITE FRONT.png",
+        "image": "DESIGN 02 WHITE FRONT.jpg",
         "productName": "PN Believe T-shirt",
         "price": 1000000,
         "productType":"main",
