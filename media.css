@@ -245,10 +245,6 @@ nav{
         margin: auto;
     }
     
-    .shopImgContainer{
-        
-    }
-    
     .shopProductsIndividualContainer:hover{
         .shopImage{
             transform: scale(1.08);
@@ -280,4 +276,79 @@ nav{
         height: 0px;
         
     }    
+
+
+
+    /* Login Page */
+
+.loginDetailsContainer{
+    width: 250px;
+    border: 1px solid rgb(32, 32, 32);
+    text-align: center;
+    display: grid;
+    align-items: center ;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    margin: 120px auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginDetailsContainer h2{
+    font-family: "Jost";
+    font-size: 30px;
+    font-weight: normal;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.loginDetailsInput{
+    width: 270px;
+    height: 35px;
+    margin: 15px 0px;
+    padding: 0px 8px;
+    font-size: 14px;
+}
+
+.loginDetailsContainer button{
+    width: 270px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    transition: .2s ease-out;
+}
+
+.loginDetailsContainer button:active{
+    opacity: 0.3;
+}
+
+#loginDetailsInputCheckbox{
+    margin-bottom: 15px;
+    margin-left: -270px;
+    
+}
+
+
+.checkboxLabel{
+    font-family: "Jost";
+    font-size: 16px;
+    margin-left: 30px;
+    text-align: start;
+    margin-top: -40px;
+}
+
+.loginDetailsRegister{
+    font-family: "Jost";
+    font-size: 15px;
+    margin: 20px;
+}
+
+.loginDetailsRegister a{
+    text-decoration: underline;
+}
+
 }
