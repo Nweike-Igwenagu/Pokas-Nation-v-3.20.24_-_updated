@@ -8,7 +8,7 @@ let hatsBtn = document.querySelector('#hats');
 
 
 getFromJson = async () =>  {
-    const response = await fetch("/json/products.json")
+    const response = await fetch('products.json')
     const data = await response.json()
 
     window.onload = displayAll(data);
