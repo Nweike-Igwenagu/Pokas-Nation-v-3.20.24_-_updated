@@ -53,7 +53,17 @@
         "category":"tshirt",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
-
+    
+        {
+        "id": 8,
+        "image": "DESIGN 02 WHITE FRONT.jpg",
+        "productName": "PN Believe T-shirt",
+        "price": 1000000,
+        "productType":"main",
+        "category":"tees",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.lo"
+    },
+    
     {
         "id": 7,
         "image": "DESIGN 03 CREAM FRONT.jpg",
@@ -63,15 +73,7 @@
         "category":"tees",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
-    {
-        "id": 8,
-        "image": "DESIGN 02 WHITE FRONT.jpg",
-        "productName": "PN Believe T-shirt",
-        "price": 1000000,
-        "productType":"main",
-        "category":"tees",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.lo"
-    },
+    
     {
         "id":10,
         "image": "Design 04.png",
