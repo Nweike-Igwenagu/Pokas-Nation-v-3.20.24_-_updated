@@ -37,6 +37,14 @@ nav{
     padding-top: 15px;
 }
 
+    .sliderImage{
+        background:rgba(68, 68, 68, 0.196)url(/images/mobile\ slider\ image.jpg);
+        background-size: cover;
+        background-repeat: none ;
+        background-blend-mode: darken;
+        opacity: .9;
+    }
+
 .logoImage{
     margin-top: 5px;
     margin-left: 5px;
