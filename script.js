@@ -30,10 +30,10 @@ let mobileNav = document.querySelector('.mobileNav')
 let mobileNavCloseBtn = document.querySelector('#mobileNavCloseBtn')
 
     menuIcon.addEventListener('click',()=>{
-        mobileNav.style.display = "flex"
+        mobileNav.classList.add("mobileNavActive")
     })
     mobileNavCloseBtn.addEventListener('click',()=>{
-        mobileNav.style.display = "none"
+        mobileNav.classList.remove("mobileNavActive")
     })
     
 
