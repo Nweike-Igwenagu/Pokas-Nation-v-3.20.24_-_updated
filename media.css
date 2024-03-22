@@ -9,7 +9,11 @@
     transition:  right .2s linear;
 }
 
-
+.mobileNavActive{
+    top: 0;
+    right: 0%;
+    transition:  right .2s linear;
+}
 
 @media(max-width:700px){
     #mobileNavCloseBtn{
