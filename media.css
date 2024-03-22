@@ -4,10 +4,9 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     top: 0;
-    right: 0;
+    right: -100%;
     z-index: 999;
-    display: none;
-    bottom: 0;
+    transition:  right .2s linear;
 }
 
 
